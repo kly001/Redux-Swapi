@@ -16,14 +16,14 @@ export const charsReducer = (state = initialState, action) => {
     return {
       ...state,
       fetching: true,
-      error: ""
+      error: null
     };
   case SUCCESS:
     return {
       ...state,
       pokemon: action.payload,
       fetching: false,
-      error: ""
+      error: null
     };
   case FAILURE:
     return {
