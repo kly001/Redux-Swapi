@@ -21,7 +21,7 @@ export const charsReducer = (state = initialState, action) => {
   case SUCCESS:
     return {
       ...state,
-      pokemon: action.payload,
+     characters: action.payload,
       fetching: false,
       error: null
     };
